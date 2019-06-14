@@ -1,0 +1,108 @@
+<html>
+<head>
+	
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+ 
+  background-image: url("/static/images/whoami.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+  font-family: Gloria;
+}
+.header{
+	background-color: gray;
+	margin: none;
+	padding: 0px;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	font-style: bold;
+	float: left;
+	display: inline-block;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+	</style>
+</head>
+<body>
+
+<div class="bg-image">
+
+</div>
+<form action="http://127.0.0.1:5000/displaygen" >
+<div class="bg-text">
+  <h1>This personality test will say a lot more about you than just your ideal work style. 
+Take a moment to remember your results (or take the test again) and see what it can reveal about your life.</h1>
+  <br><button class="button"><span><a></a>Let's Begin </span></button></form>
+</div></body>
+</html>
